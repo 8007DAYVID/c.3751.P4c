@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<h3 class="header spacer">
+			A scatter plot showing the number of goals after a certain number of
+			matches played in the year 2017
+		</h3>
+		<div class="spacer">
+			<p>you can filter the data by selecting items on the selection menu</p>
+
+
+			<p>hover on the point marks to see the names of the players</p>
+		</div>
+
+		<div class="filter-container spacer">
+			<select id="y-axis-filter">
+				<option value="goals">goals</option>
+				<option value="matches_played">matches played</option>
+				<option value="shots">shot</option>
+				<option value="shots per avg match">shots per avg match</option>
+			</select>
+
+			vs
+
+			<select id="x-axis-filter">
+				<option value="goals">matches played</option>
+				<option value="matches_played">goals</option>
+				<option value="shots">shot</option>
+				<option value="shots per avg match">shots per avg match</option>
+			</select>
+		</div>
+		
+
+		<div id="app"></div>
+		<script type="module" src="./main.js"></script>
+	</body>
+</html>
